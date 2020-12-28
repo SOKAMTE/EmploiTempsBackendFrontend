@@ -1,0 +1,8 @@
+/home/youssouf/Documents/Application c#/EmploiTemps/obj/Debug/netcoreapp3.1/EmploiTemps.csprojAssemblyReference.cache
+/home/youssouf/Documents/Application c#/EmploiTemps/obj/Debug/netcoreapp3.1/EmploiTemps.AssemblyInfoInputs.cache
+/home/youssouf/Documents/Application c#/EmploiTemps/obj/Debug/netcoreapp3.1/EmploiTemps.AssemblyInfo.cs
+/home/youssouf/Documents/Application c#/EmploiTemps/obj/Debug/netcoreapp3.1/EmploiTemps.csproj.CoreCompileInputs.cache
+/home/youssouf/Documents/Application c#/EmploiTemps/obj/Debug/netcoreapp3.1/EmploiTemps.MvcApplicationPartsAssemblyInfo.cs
+/home/youssouf/Documents/Application c#/EmploiTemps/obj/Debug/netcoreapp3.1/EmploiTemps.MvcApplicationPartsAssemblyInfo.cache
+/home/youssouf/Documents/Application c#/EmploiTemps/obj/Debug/netcoreapp3.1/EmploiTemps.RazorAssemblyInfo.cache
+/home/youssouf/Documents/Application c#/EmploiTemps/obj/Debug/netcoreapp3.1/EmploiTemps.RazorAssemblyInfo.cs

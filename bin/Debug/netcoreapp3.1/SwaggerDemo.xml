@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>emploiTemps</name>
+    </assembly>
+    <members>
+        <member name="M:emploiTemps.Controllers.DepartementController.GetDepartement">
+            <summary>
+            Retourne la liste des Departement
+            </summary>
+            <remarks>Services qui permet d'afficher tous les départements</remarks>  
+            <response code="200">Departement selectionné</response>
+            <response code="404">Departement introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.DepartementController.GetDepartement(System.Int32)">
+            <summary>
+            Retourne une Departement specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Departement a retourné</param>   
+            <response code="200">Departement selectionné</response>
+            <response code="404">Departement introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.DepartementController.CreateDepartement(emploiTemps.Models.Departement)">
+            <summary>
+            Créer une Departement à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="departement">objet Departement de la classe Departement du Unite à créer</param>  
+            <response code="200">Departement selectionné</response>
+            <response code="404">Departement introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.DepartementController.UpdateDepartement(System.Int32,emploiTemps.Models.Departement)">
+            <summary>
+            modifie un Departement specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Departement à modifier</param>   
+            <param name="departement">classe d'entité du Departement à modifier</param>
+            <response code="200">Departement selectionné</response>
+            <response code="404">Departement introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.DepartementController.DeleteDepartement(System.Int32)">
+            <summary>
+            supprime une Departement specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Departement à supprimer</param>   
+            <response code="200">Departement selectionné</response>
+            <response code="404">Departement introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.DepartementController.Search(System.String)">
+            <summary>
+            recherche une Departement specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur de l'Departement à rechercher</param>   
+            <response code="200">Departement recherché</response>
+            <response code="404">Departement introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.EnseignantController.GetEnseignant">
+            <summary>
+            Retourne la liste des Enseignant
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">Enseignant selectionné</response>
+            <response code="404">Enseignant introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.EnseignantController.GetEnseignant(System.Int32)">
+            <summary>
+            Retourne une Enseignant specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Enseignant a retourné</param>   
+            <response code="200">Enseignant selectionné</response>
+            <response code="404">Enseignant introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.EnseignantController.CreateEnseignant(emploiTemps.Models.Enseignant)">
+            <summary>
+            Créer une Enseignant à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="enseignant">objet Enseignant de la classe User du Unite à créer</param>  
+            <response code="200">Enseignant selectionné</response>
+            <response code="404">Enseignant introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.EnseignantController.UpdatEnseignant(System.Int32,emploiTemps.Models.Enseignant)">
+            <summary>
+            modifie un Enseignant specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Enseignant à modifier</param>   
+            <param name="enseignant">classe d'entité du Enseignant à modifier</param>
+            <response code="200">Enseignant selectionné</response>
+            <response code="404">Enseignant introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.EnseignantController.DeleteEnseignant(System.Int32)">
+            <summary>
+            supprime une Enseignant specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Enseignant à supprimer</param>   
+            <response code="200">Enseignant selectionné</response>
+            <response code="404">Enseignant introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.EnseignantController.Search(System.String)">
+            <summary>
+            recherche une Enseignant specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur de l'Enseignant à rechercher</param>   
+            <response code="200">Enseignant recherché</response>
+            <response code="404">Enseignant introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.NiveauController.GetNiveau">
+            <summary>
+            Retourne la liste des Niveau
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">Niveau selectionné</response>
+            <response code="404">Niveau introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.NiveauController.GetNiveau(System.Int32)">
+            <summary>
+            Retourne une Niveau specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Niveau a retourné</param>   
+            <response code="200">Niveau selectionné</response>
+            <response code="404">Niveau introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.NiveauController.CreateNiveau(emploiTemps.Models.Niveau)">
+            <summary>
+            Créer une Niveau à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="niveau">objet Semestre de la classe User du Unite à créer</param>  
+            <response code="200">Niveau selectionné</response>
+            <response code="404">Niveau introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.NiveauController.UpdatNiveau(System.Int32,emploiTemps.Models.Niveau)">
+            <summary>
+            modifie un Niveau specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Niveau à modifier</param>   
+            <param name="niveau">classe d'entité du Niveau à modifier</param>
+            <response code="200">Niveau selectionné</response>
+            <response code="404">Niveau introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.NiveauController.DeleteNiveau(System.Int32)">
+            <summary>
+            supprime une Niveau specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Niveau à supprimer</param>   
+            <response code="200">Niveau selectionné</response>
+            <response code="404">Niveau introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.NiveauController.Search(System.String)">
+            <summary>
+            recherche une Niveau specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur de l'Niveau à rechercher</param>   
+            <response code="200">Niveau recherché</response>
+            <response code="404">Niveau introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.OptionController.GetOption">
+            <summary>
+            Retourne la liste des Option
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">Option selectionné</response>
+            <response code="404">Option introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.OptionController.GetOption(System.Int32)">
+            <summary>
+            Retourne une Option specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Option a retourné</param>   
+            <response code="200">Option selectionné</response>
+            <response code="404">Option introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.OptionController.CreateOption(emploiTemps.Models.Option)">
+            <summary>
+            Créer une Option à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="option">objet Semestre de la classe User du Unite à créer</param>  
+            <response code="200">Option selectionné</response>
+            <response code="404">Option introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.OptionController.UpdatOption(System.Int32,emploiTemps.Models.Option)">
+            <summary>
+            modifie un Option specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Option à modifier</param>   
+            <param name="option">classe d'entité du Option à modifier</param>
+            <response code="200">Option selectionné</response>
+            <response code="404">Option introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.OptionController.DeleteOption(System.Int32)">
+            <summary>
+            supprime une Option specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Option à supprimer</param>   
+            <response code="200">Option selectionné</response>
+            <response code="404">Option introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.OptionController.Search(System.String)">
+            <summary>
+            recherche une Option specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur de l'Option à rechercher</param>   
+            <response code="200">Option recherché</response>
+            <response code="404">Option introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.PeriodeController.GetPeriode">
+            <summary>
+            Retourne la liste des Periode
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">Periode selectionné</response>
+            <response code="404">Periode introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.PeriodeController.GetPeriode(System.Int32)">
+            <summary>
+            Retourne une Periode specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Periode a retourné</param>   
+            <response code="200">Periode selectionné</response>
+            <response code="404">Periode introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.PeriodeController.CreatePeriode(emploiTemps.Models.Periode)">
+            <summary>
+            Créer une Periode à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="periode">objet Semestre de la classe User du Unite à créer</param>  
+            <response code="200">Periode selectionné</response>
+            <response code="404">Periode introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.PeriodeController.UpdatPeriode(System.Int32,emploiTemps.Models.Periode)">
+            <summary>
+            modifie un Periode specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Periode à modifier</param>   
+            <param name="periode">classe d'entité du Periode à modifier</param>
+            <response code="200">Periode selectionné</response>
+            <response code="404">Periode introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.PeriodeController.DeletePeriode(System.Int32)">
+            <summary>
+            supprime une Periode specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Periode à supprimer</param>   
+            <response code="200">Periode selectionné</response>
+            <response code="404">Periode introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.PeriodeController.Search(System.String)">
+            <summary>
+            recherche une Periode specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur de l'Periode à rechercher</param>   
+            <response code="200">Periode recherché</response>
+            <response code="404">Periode introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.SalleController.GetSalle">
+            <summary>
+            Retourne la liste des Salle
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">Salle selectionné</response>
+            <response code="404">Salle introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.SalleController.GetSalle(System.Int32)">
+            <summary>
+            Retourne une Salle specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Salle a retourné</param>   
+            <response code="200">Salle selectionné</response>
+            <response code="404">Salle introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.SalleController.CreateSalle(emploiTemps.Models.Salle)">
+            <summary>
+            Créer une Salle à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="salle">objet Semestre de la classe User du Unite à créer</param>  
+            <response code="200">Salle selectionné</response>
+            <response code="404">Salle introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.SalleController.UpdatSalle(System.Int32,emploiTemps.Models.Salle)">
+            <summary>
+            modifie un Salle specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Salle à modifier</param>   
+            <param name="salle">classe d'entité du Salle à modifier</param>
+            <response code="200">Salle selectionné</response>
+            <response code="404">Salle introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.SalleController.DeleteSalle(System.Int32)">
+            <summary>
+            supprime une Salle specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Salle à supprimer</param>   
+            <response code="200">Salle selectionné</response>
+            <response code="404">Salle introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.SalleController.Search(System.String)">
+            <summary>
+            recherche une Salle specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur de l'Salle à rechercher</param>   
+            <response code="200">Salle recherché</response>
+            <response code="404">Salle introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.SemestreController.GetSemestre">
+            <summary>
+            Retourne la liste des Semestre
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">Semestre selectionné</response>
+            <response code="404">Semestre introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.SemestreController.GetSemestre(System.Int32)">
+            <summary>
+            Retourne une Semestre specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Semestre a retourné</param>   
+            <response code="200">Semestre selectionné</response>
+            <response code="404">Semestre introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.SemestreController.CreateSemestre(emploiTemps.Models.Semestre)">
+            <summary>
+            Créer une Semestre à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="semestre">objet Semestre de la classe User du Unite à créer</param>  
+            <response code="200">Semestre selectionné</response>
+            <response code="404">Semestre introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.SemestreController.UpdatSemestre(System.Int32,emploiTemps.Models.Semestre)">
+            <summary>
+            modifie un Semestre specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Semestre à modifier</param>   
+            <param name="semestre">classe d'entité du Semestre à modifier</param>
+            <response code="200">Semestre selectionné</response>
+            <response code="404">Semestre introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.SemestreController.DeleteSemestre(System.Int32)">
+            <summary>
+            supprime une Semestre specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Semestre à supprimer</param>   
+            <response code="200">Semestre selectionné</response>
+            <response code="404">Semestre introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.SemestreController.Search(System.String)">
+            <summary>
+            recherche une Semestre specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur de l'Semestre à rechercher</param>   
+            <response code="200">Semestre recherché</response>
+            <response code="404">Semestre introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.UniteController.GetUnite">
+            <summary>
+            Retourne la liste des Unites
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">Unite selectionné</response>
+            <response code="404">Unite introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.UniteController.GetUnite(System.Int32)">
+            <summary>
+            Retourne une Unite specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Unite a retourné</param>   
+            <response code="200">Unite selectionné</response>
+            <response code="404">Unite introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.UniteController.CreateUnite(emploiTemps.Models.Unite)">
+            <summary>
+            Créer une unite à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="unite">objet unite de la classe unite du Unite à créer</param>  
+            <response code="200">unite selectionné</response>
+            <response code="404">unite introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.UniteController.UpdateUnite(System.Int32,emploiTemps.Models.Unite)">
+            <summary>
+            modifie un unite specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du unite à modifier</param>   
+            <param name="unite">classe d'entité du unite à modifier</param>
+            <response code="200">unite selectionné</response>
+            <response code="404">unite introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.UniteController.DeleteUnite(System.Int32)">
+            <summary>
+            supprime une unite specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du unite à supprimer</param>   
+            <response code="200">unite selectionné</response>
+            <response code="404">unite introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.UniteController.Search(System.String)">
+            <summary>
+            recherche une unite specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur de l'unite à rechercher</param>   
+            <response code="200">unite recherché</response>
+            <response code="404">unite introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.UserController.GetUser">
+            <summary>
+            Retourne la liste des User
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">User selectionné</response>
+            <response code="404">User introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.UserController.GetUser(System.Int32)">
+            <summary>
+            Retourne une User specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du User a retourné</param>   
+            <response code="200">User selectionné</response>
+            <response code="404">User introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.UserController.CreateUser(emploiTemps.Models.User)">
+            <summary>
+            Créer une User à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="user">objet User de la classe User du Unite à créer</param>  
+            <response code="200">User selectionné</response>
+            <response code="404">User introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.UserController.UpdateUser(System.Int32,emploiTemps.Models.User)">
+            <summary>
+            modifie un User specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Departement à modifier</param>   
+            <param name="user">classe d'entité du User à modifier</param>
+            <response code="200">User selectionné</response>
+            <response code="404">User introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.UserController.DeleteUser(System.Int32)">
+            <summary>
+            supprime une User specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du User à supprimer</param>   
+            <response code="200">User selectionné</response>
+            <response code="404">User introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:emploiTemps.Controllers.UserController.Search(System.String)">
+            <summary>
+            recherche une User specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur de l'User à rechercher</param>   
+            <response code="200">User recherché</response>
+            <response code="404">User introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,19 @@
+{
+  "name": "emploitemps",
+  "version": "1.0.0",
+  "description": "Projet emploi de temps",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^17.0.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "emploiTemps"
+  }
+}
